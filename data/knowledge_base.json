@@ -1,0 +1,108 @@
+[
+  {
+    "id": "KB-001",
+    "title": "Windows Installation Troubleshooting",
+    "category": "installation",
+    "keywords": [
+      "windows",
+      "installation",
+      "installer",
+      "setup",
+      "administrator",
+      "dependency"
+    ],
+    "summary": "Most Windows installation problems are caused by outdated installers, insufficient permissions, missing dependencies, or security software blocking setup.",
+    "steps": [
+      "Download the latest installer from the official product source.",
+      "Run the installer as Administrator.",
+      "Verify that the system meets the minimum requirements.",
+      "Install any required runtime or dependency packages.",
+      "Temporarily test whether security software is blocking installation.",
+      "Review installer logs if the error continues."
+    ]
+  },
+  {
+    "id": "KB-002",
+    "title": "API Authentication Troubleshooting",
+    "category": "api_support",
+    "keywords": [
+      "api",
+      "authentication",
+      "token",
+      "401",
+      "403",
+      "bearer"
+    ],
+    "summary": "API authentication errors commonly result from missing, expired, malformed, or incorrectly scoped credentials.",
+    "steps": [
+      "Confirm the API key or access token is valid.",
+      "Verify the Authorization header format.",
+      "Check token expiration.",
+      "Confirm the credential has permission for the requested endpoint.",
+      "Check whether the API base URL and environment are correct."
+    ]
+  },
+  {
+    "id": "KB-003",
+    "title": "Application Performance Troubleshooting",
+    "category": "performance",
+    "keywords": [
+      "slow",
+      "performance",
+      "cpu",
+      "memory",
+      "latency",
+      "timeout"
+    ],
+    "summary": "Performance problems should be isolated by checking resource utilization, logs, network latency, application version, and workload size.",
+    "steps": [
+      "Check CPU and memory utilization.",
+      "Review application logs for repeated warnings or exceptions.",
+      "Confirm the software is updated.",
+      "Test network latency when the product depends on remote services.",
+      "Reduce workload size temporarily to isolate scaling problems."
+    ]
+  },
+  {
+    "id": "KB-004",
+    "title": "Configuration and Environment Issues",
+    "category": "configuration",
+    "keywords": [
+      "configuration",
+      "config",
+      "environment",
+      "settings",
+      "variable",
+      "path"
+    ],
+    "summary": "Configuration problems often come from incorrect environment values, file paths, ports, permissions, or stale cached settings.",
+    "steps": [
+      "Verify required environment variables.",
+      "Confirm configuration file paths.",
+      "Check port and host values.",
+      "Restart the application after changing configuration.",
+      "Compare the configuration with the supplied example file."
+    ]
+  },
+  {
+    "id": "KB-005",
+    "title": "Password and Login Recovery",
+    "category": "account",
+    "keywords": [
+      "login",
+      "password",
+      "reset",
+      "account",
+      "credential",
+      "username"
+    ],
+    "summary": "Login problems can usually be resolved by verifying the account identifier, resetting the password, and checking whether the account is locked or disabled.",
+    "steps": [
+      "Confirm the correct username or email address.",
+      "Use the official password-reset process.",
+      "Check whether Caps Lock or keyboard layout is affecting the password.",
+      "Verify that the account is active.",
+      "Contact an administrator if the account remains locked."
+    ]
+  }
+]

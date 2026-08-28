@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "supportgpt-ai"
+version = "1.0.0"
+description = "Intelligent technical-support assistant for software products"
+requires-python = ">=3.10"
+dependencies = [
+  "scikit-learn>=1.5",
+  "fastapi>=0.115",
+  "uvicorn[standard]>=0.30",
+  "streamlit>=1.37",
+  "pydantic>=2.8"
+]
+
+[project.scripts]
+supportgpt = "supportgpt.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
